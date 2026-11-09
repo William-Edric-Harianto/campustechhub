@@ -7,5 +7,6 @@ data class Mahasiswa(
     val nama: String,
     val jurusan: Jurusan,
     val angkatan: Int,
-    val nim: Int,
+    val nim: String,
+    val mahasiswaAktif: Boolean
 )

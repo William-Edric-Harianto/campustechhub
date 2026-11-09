@@ -3,13 +3,18 @@ package com.edric.campustechhub.navigation
 import kotlinx.serialization.Serializable
 
 @Serializable
-object ProfileDashboardRoute
+object DashboardRoute
 
 @Serializable
-object CommunitiesDirectoryRoute
+object CommunitiesRoute
 
 @Serializable
-data class ClubProjectsDetailRoute(val communityId: String)
+data class ClubProjectsRoute(val communityId: String)
 
 @Serializable
 data class ProjectDetailRoute(val projectId: String)
+
+// Backward compatibility type aliases
+typealias ProfileDashboardRoute = DashboardRoute
+typealias CommunitiesDirectoryRoute = CommunitiesRoute
+typealias ClubProjectsDetailRoute = ClubProjectsRoute
